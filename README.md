@@ -1,5 +1,26 @@
 # 📖 Crypto Tracker - Guía Completa
 
+## 🎯 Novedades (18 Feb 2026 - Fase 1)
+
+### Arquitectura Mejorada
+- ✅ **TradingStrategy integrado** - Ahora `monitor.js` usa el engine completo de trading con risk management
+- ✅ **Configuración centralizada** - Single source of truth vía `ConfigLoader`
+- ✅ **Eliminada dependencia obsoleta** - Removido paquete `crypto` (es módulo nativo de Node)
+- ✅ **Modos de trading** - Cambia entre `conservative` y `aggressive` con env var `TRADING_MODE`
+
+### Cambios en Archivos
+- **Nuevo:** `lib/configLoader.js` - Carga configuración desde `config/[mode].json`
+- **Actualizado:** `monitor.js` - Integrado con `TradingStrategy`
+- **Actualizado:** `data/allocations.json` - Eliminados risk params duplicados
+- **Nuevo:** `test_integration.js` - Verifica integración de componentes
+
+### Testing
+```bash
+node test_integration.js
+```
+
+---
+
 ## 🚀 Comandos Rápidos
 
 ### Ver resumen completo del día

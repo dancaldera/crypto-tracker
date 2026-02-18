@@ -3,23 +3,39 @@ const axios = require('axios');
 const CryptoLogger = require('./logger');
 const BitsoAPI = require('./bitso_api');
 const TechnicalAnalyzer = require('./technical_analyzer');
+const TradingStrategy = require('./trading_strategy');
+const ConfigLoader = require('./lib/configLoader');
 const fs = require('fs');
 const path = require('path');
 
 class CryptoMonitor {
   constructor() {
     this.logger = new CryptoLogger();
-    this.loadConfig();
+
+    // Cargar configuración centralizada
+    this.configLoader = new ConfigLoader(process.env.TRADING_MODE || 'conservative');
+    this.config = this.configLoader.getConfig();
+
     this.enableTrading = process.env.ENABLE_TRADING === 'true';
     this.technicalAnalyzer = new TechnicalAnalyzer({
       pricesDir: path.join(__dirname, 'logs', 'prices')
     });
-    this.enableTechnicalAnalysis = process.env.ENABLE_TECHNICAL !== 'false'; // Por defecto activado
+    this.enableTechnicalAnalysis = process.env.ENABLE_TECHNICAL !== 'false';
+
+    // Inicializar TradingStrategy con risk params del config
+    this.tradingStrategy = new TradingStrategy({
+      logsDir: path.join(__dirname, 'logs', 'trades'),
+      ...this.config.riskParams
+    });
   }
 
   loadConfig() {
-    const allocationsPath = path.join(__dirname, 'data', 'allocations.json');
-    this.allocations = JSON.parse(fs.readFileSync(allocationsPath, 'utf8'));
+    // DEPRECATED - Usar ConfigLoader ahora
+    // Mantenido por compatibilidad temporal
+    this.allocations = {
+      target_allocations: this.configLoader.getTargetAllocations(),
+      rebalance_settings: this.config.rebalanceSettings
+    };
   }
 
   // Obtener precio público (no requiere autenticación)
@@ -207,10 +223,10 @@ class CryptoMonitor {
     return allocations;
   }
 
-  // Verificar si necesita rebalanceo
+  // Verificar si necesita rebalanceo (DEPRECATED - fallback simple)
   needsRebalance(currentAllocations) {
-    const target = this.allocations.target_allocations;
-    const threshold = this.allocations.rebalance_settings.threshold_percent;
+    const target = this.configLoader.getTargetAllocations();
+    const threshold = this.config.rebalanceSettings.thresholdPercent;
     const needsRebalance = {};
     let anyNeedsRebalance = false;
 
@@ -235,16 +251,66 @@ class CryptoMonitor {
     return { needsRebalance, anyNeedsRebalance };
   }
 
+  /**
+   * Convertir decisiones de TradingStrategy a formato compatible con generateAlert
+   */
+  decisionsToRebalanceInfo(decisions, currentAllocations) {
+    const needsRebalance = {};
+    let anyNeedsRebalance = false;
+
+    const target = this.configLoader.getTargetAllocations();
+
+    // Inicializar con info de allocations
+    Object.keys(target).forEach(asset => {
+      const currentPercent = currentAllocations[asset] || 0;
+      const targetPercent = target[asset] * 100;
+      const diff = Math.abs(currentPercent - targetPercent);
+
+      needsRebalance[asset] = {
+        current: currentPercent.toFixed(2),
+        target: targetPercent,
+        diff: diff.toFixed(2),
+        threshold: this.config.rebalanceSettings.thresholdPercent,
+        action: null
+      };
+    });
+
+    // Agregar acciones de decisiones
+    decisions.forEach(decision => {
+      if (decision.action !== 'HOLD') {
+        needsRebalance[decision.asset].action = decision.action.toLowerCase();
+        needsRebalance[decision.asset].tradePercent = decision.tradePercent;
+        anyNeedsRebalance = true;
+      }
+    });
+
+    return { needsRebalance, anyNeedsRebalance };
+  }
+
+  /**
+   * Extraer precios del objeto prices
+   */
+  extractPrices(prices) {
+    const result = {};
+    Object.keys(prices).forEach(asset => {
+      result[asset] = prices[asset].price;
+    });
+    return result;
+  }
+
   // Generar mensaje de alerta
   generateAlert(portfolio, currentAllocations, rebalanceInfo, technicalAnalysis = null) {
     let message = '📊 *Crypto Portfolio Update*\n\n';
 
-    message += `💰 Total Value: $${portfolio.total_value.toFixed(2)}\n\n`;
+    message += `💰 Total Value: $${portfolio.total_value.toFixed(2)}\n`;
+
+    // Agregar modo de trading
+    message += `🎯 Mode: ${this.config.mode.toUpperCase()}\n\n`;
 
     message += '*Current Allocation:*\n';
     Object.keys(currentAllocations).forEach(asset => {
       const percent = currentAllocations[asset].toFixed(2);
-      const target = (this.allocations.target_allocations[asset] * 100).toFixed(2);
+      const target = (this.configLoader.getTargetAllocations()[asset] * 100).toFixed(2);
       const emoji = percent > target ? '📈' : percent < target ? '📉' : '✅';
 
       // Agregar señal técnica si está disponible
@@ -264,7 +330,8 @@ class CryptoMonitor {
       Object.keys(rebalanceInfo.needsRebalance).forEach(asset => {
         const info = rebalanceInfo.needsRebalance[asset];
         if (info.action) {
-          message += `${info.action.toUpperCase()} ${asset}: ${info.diff}% deviation\n`;
+          const tradeInfo = info.tradePercent ? ` (${info.tradePercent.toFixed(1)}%)` : '';
+          message += `${info.action.toUpperCase()} ${asset}: ${info.diff}% deviation${tradeInfo}\n`;
         }
       });
     }
@@ -289,15 +356,10 @@ class CryptoMonitor {
     return message;
   }
 
-  // Ejecutar rebalanceo (SOLO si enableTrading = true)
+  // Ejecutar rebalanceo (DEPRECATED - TradingStrategy ahora maneja esto)
   async rebalance(rebalanceInfo, portfolio) {
-    if (!this.enableTrading) {
-      console.log('Trading disabled - skipping rebalance');
-      return { executed: false, reason: 'trading_disabled' };
-    }
-
-    console.log('Rebalance not implemented yet');
-    return { executed: false, reason: 'not_implemented' };
+    console.log('⚠️ rebalance() deprecated - TradingStrategy.executeTrades() now handles execution');
+    return { executed: false, reason: 'deprecated' };
   }
 
   // Run principal
@@ -320,53 +382,67 @@ class CryptoMonitor {
       const currentAllocations = this.calculateCurrentAllocations(portfolio);
       console.log('Current allocations:', currentAllocations);
 
-      // 4. Verificar si necesita rebalanceo
-      const rebalanceInfo = this.needsRebalance(currentAllocations);
-      console.log('Rebalance info:', rebalanceInfo);
-
-      // 5. Guardar logs
-      this.logger.logPortfolio(portfolio);
-
-      // 6. Análisis técnico (si está habilitado)
+      // 4. Análisis técnico (si está habilitado) - ANTES de decisiones
       let technicalAnalysis = null;
-      let technicalRecommendations = [];
 
       if (this.enableTechnicalAnalysis) {
         console.log('\n📊 Running technical analysis...');
         try {
           const analysisResults = await this.technicalAnalyzer.analyzeAll(
             ['BTC', 'ETH', 'SOL', 'USDC'],
-            3 // últimos 3 días
+            this.config.indicators.lookbackDays // Usa config
           );
           technicalAnalysis = analysisResults;
           console.log('Technical analysis completed:', Object.keys(analysisResults));
-
-          // Generar recomendaciones basadas en análisis técnico
-          technicalRecommendations = this.technicalAnalyzer.generateRebalanceRecommendation(
-            analysisResults,
-            currentAllocations,
-            this.allocations.target_allocations
-          );
-
-          if (technicalRecommendations.length > 0) {
-            console.log('\n💡 Technical recommendations:');
-            technicalRecommendations.forEach(rec => {
-              console.log(`  ${rec.action} ${rec.asset}: ${rec.reason}`);
-            });
-          }
         } catch (error) {
           console.error('Error in technical analysis:', error.message);
         }
       }
 
+      // 5. Usar TradingStrategy para decidir posiciones (NUEVA LÓGICA)
+      let tradingDecisions = null;
+      let rebalanceInfo = { needsRebalance: {}, anyNeedsRebalance: false };
+
+      if (technicalAnalysis) {
+        console.log('\n🎯 Using Trading Strategy for decisions...');
+        tradingDecisions = this.tradingStrategy.decidePositions(
+          currentAllocations,
+          this.configLoader.getTargetAllocations(),
+          technicalAnalysis,
+          portfolio.total_value,
+          this.extractPrices(prices)
+        );
+
+        console.log('Trading decisions:', tradingDecisions);
+
+        // Convertir decisiones a formato compatible con generateAlert
+        rebalanceInfo = this.decisionsToRebalanceInfo(tradingDecisions.decisions, currentAllocations);
+      } else {
+        // Fallback a lógica simple de rebalanceo (sin análisis técnico)
+        console.log('\n⚠️ No technical analysis, using simple rebalance check');
+        rebalanceInfo = this.needsRebalance(currentAllocations);
+      }
+
+      // 6. Guardar logs
+      this.logger.logPortfolio(portfolio);
+
       // 7. Generar alerta
       const alert = this.generateAlert(portfolio, currentAllocations, rebalanceInfo, technicalAnalysis);
       console.log('\n📢 Alert:', alert);
 
-      // 7. Ejecutar rebalanceo si es necesario
-      if (rebalanceInfo.anyNeedsRebalance && this.enableTrading) {
-        const rebalanceResult = await this.rebalance(rebalanceInfo, portfolio);
-        console.log('Rebalance result:', rebalanceResult);
+      // 8. Ejecutar trades si hay decisiones y trading está habilitado
+      if (tradingDecisions && tradingDecisions.decisions.length > 0 && this.enableTrading) {
+        console.log('\n💼 Executing trades...');
+        const executionResult = await this.tradingStrategy.executeTrades(
+          tradingDecisions.decisions,
+          portfolio
+        );
+        console.log('Trade execution result:', executionResult);
+
+        // Actualizar portfolio después de trades
+        if (executionResult.executed.length > 0) {
+          this.logger.logPortfolio(portfolio);
+        }
       }
 
       // 8. Generar reporte PnL

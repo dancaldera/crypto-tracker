@@ -10,16 +10,11 @@
     "min_trade_usd": 50,
     "max_trade_usd": 1000
   },
-  "risk_management": {
-    "max_daily_loss_percent": 5,
-    "stop_loss_percent": 15,
-    "take_profit_percent": 25
-  },
   "notes": [
     "BTC: Reserva de valor, mayor parte del portafolio (40%)",
     "ETH: Smart contracts, DeFi potencial (25%)",
     "SOL: Blockchain de alto rendimiento, ecosistema NFT/DeFi (15%)",
     "USDC: Stablecoin para rebalanceos y liquidez (20%)",
-    "Ajusta los porcentajes según tu tolerancia al riesgo"
+    "Risk management settings ahora en config/[mode].json"
   ]
 }
