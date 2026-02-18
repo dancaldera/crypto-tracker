@@ -1,0 +1,543 @@
+[
+  {
+    "timestamp": 1771286404010,
+    "datetime": "2026-02-17T00:00:04.010Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1182580,
+          "value": 1199.13612
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34205,
+          "value": 728.5665
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1483.58,
+          "value": 456.94264
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.168,
+          "value": 599.1632
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2983.80846,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771286404000
+    }
+  },
+  {
+    "timestamp": 1771303778929,
+    "datetime": "2026-02-17T04:49:38.929Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.05,
+          "price": 1175580,
+          "value": 58779
+        },
+        "ETH": {
+          "amount": 0.5,
+          "price": 34205,
+          "value": 17102.5
+        },
+        "USDC": {
+          "amount": 100,
+          "price": 17.18,
+          "value": 1718
+        }
+      },
+      "notes": [
+        "Este es un portafolio de ejemplo",
+        "BTC: 0.05 BTC",
+        "ETH: 0.5 ETH",
+        "USDC: 100 USDC",
+        "Ajusta estos valores según tu portafolio real",
+        "O conecta APIs de Bitso/Coinbase para obtener datos reales"
+      ],
+      "last_updated": null,
+      "total_value": 77599.5,
+      "timestamp": 1771303778926
+    }
+  },
+  {
+    "timestamp": 1771303837689,
+    "datetime": "2026-02-17T04:50:37.689Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.05,
+          "price": 1175580,
+          "value": 58779
+        },
+        "ETH": {
+          "amount": 0.5,
+          "price": 34205,
+          "value": 17102.5
+        },
+        "USDC": {
+          "amount": 100,
+          "price": 17.179,
+          "value": 1717.8999999999999
+        }
+      },
+      "notes": [
+        "Este es un portafolio de ejemplo",
+        "BTC: 0.05 BTC",
+        "ETH: 0.5 ETH",
+        "USDC: 100 USDC",
+        "Ajusta estos valores según tu portafolio real",
+        "O conecta APIs de Bitso/Coinbase para obtener datos reales"
+      ],
+      "last_updated": null,
+      "total_value": 77599.4,
+      "timestamp": 1771303837686
+    }
+  },
+  {
+    "timestamp": 1771303873344,
+    "datetime": "2026-02-17T04:51:13.344Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1177130,
+          "value": 1193.60982
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34205,
+          "value": 728.5665
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1483.68,
+          "value": 456.97344000000004
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.182,
+          "value": 599.6518
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2978.8015600000003,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771303873341
+    }
+  },
+  {
+    "timestamp": 1771308010089,
+    "datetime": "2026-02-17T06:00:10.089Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1172110,
+          "value": 1188.51954
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 33976,
+          "value": 723.6888
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1482.07,
+          "value": 456.47756
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.192,
+          "value": 600.0008
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2968.6867,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771308010086
+    }
+  },
+  {
+    "timestamp": 1771315203166,
+    "datetime": "2026-02-17T08:00:03.166Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1176540,
+          "value": 1193.01156
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34171,
+          "value": 727.8423
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1488.49,
+          "value": 458.45492
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.199,
+          "value": 600.2451
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2979.55388,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771315203162
+    }
+  },
+  {
+    "timestamp": 1771322403382,
+    "datetime": "2026-02-17T10:00:03.382Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1169180,
+          "value": 1185.5485199999998
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 33878,
+          "value": 721.6014
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1477.73,
+          "value": 455.14084
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.183,
+          "value": 599.6867
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2961.97746,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771322403379
+    }
+  },
+  {
+    "timestamp": 1771329603458,
+    "datetime": "2026-02-17T12:00:03.458Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1166270,
+          "value": 1182.5977799999998
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 33747,
+          "value": 718.8111
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1462.43,
+          "value": 450.42844
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.176,
+          "value": 599.4423999999999
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2951.27972,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771329603455
+    }
+  },
+  {
+    "timestamp": 1771336803628,
+    "datetime": "2026-02-17T14:00:03.628Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1172310,
+          "value": 1188.7223399999998
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34218,
+          "value": 728.8434
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1464.45,
+          "value": 451.05060000000003
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.2,
+          "value": 600.28
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2968.8963399999993,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771336803624
+    }
+  },
+  {
+    "timestamp": 1771344004090,
+    "datetime": "2026-02-17T16:00:04.090Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1157630,
+          "value": 1173.83682
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 33867,
+          "value": 721.3670999999999
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1441.81,
+          "value": 444.07748
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.209,
+          "value": 600.5940999999999
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2939.8754999999996,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771344004087
+    }
+  },
+  {
+    "timestamp": 1771351204399,
+    "datetime": "2026-02-17T18:00:04.399Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1152140,
+          "value": 1168.2699599999999
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 33684,
+          "value": 717.4692
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1433.22,
+          "value": 441.43176
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.152,
+          "value": 598.6048
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2925.77572,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771351204396
+    }
+  },
+  {
+    "timestamp": 1771358403613,
+    "datetime": "2026-02-17T20:00:03.613Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1162040,
+          "value": 1178.30856
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34214,
+          "value": 728.7582
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1453.7,
+          "value": 447.7396
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.121,
+          "value": 597.5228999999999
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2952.32926,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771358403610
+    }
+  },
+  {
+    "timestamp": 1771365621105,
+    "datetime": "2026-02-17T22:00:21.105Z",
+    "portfolio": {
+      "assets": {
+        "BTC": {
+          "amount": 0.001014,
+          "price": 1158680,
+          "value": 1174.90152
+        },
+        "ETH": {
+          "amount": 0.0213,
+          "price": 34219,
+          "value": 728.8647
+        },
+        "SOL": {
+          "amount": 0.308,
+          "price": 1458.78,
+          "value": 449.30424
+        },
+        "USDC": {
+          "amount": 34.9,
+          "price": 17.123,
+          "value": 597.5927
+        }
+      },
+      "notes": [
+        "Cartera de TEST - MODO CONSERVADOR",
+        "Monto total: ~$3,000 MXN ($150 USD)",
+        "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+        "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+        "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+        "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+        "Perfiles de riesgo: bajo, ideal para aprender",
+        "Configuración con 4 assets optimizada"
+      ],
+      "total_value": 2950.66316,
+      "last_updated": null,
+      "mode": "test_conservador",
+      "risk_profile": "conservador",
+      "timestamp": 1771365621102
+    }
+  }
+]

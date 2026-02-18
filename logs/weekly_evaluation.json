@@ -1,0 +1,78 @@
+{
+  "durationDays": 2,
+  "portfolio": {
+    "startValue": 3003.208,
+    "endValue": 3006.2902999999997,
+    "weekChange": 3.0822999999995773,
+    "weekPercentChange": 0.10263358382101996,
+    "currentValue": 3006.2902999999997
+  },
+  "system": {
+    "totalRuns": 6,
+    "expectedRuns": 24,
+    "runRate": 25,
+    "totalErrors": 0,
+    "totalRebalanceSignals": 0,
+    "wouldRebalance": false
+  },
+  "assetPerformance": {
+    "BTC": {
+      "start": 1201.41762,
+      "end": 1202.6851199999999,
+      "change": 1.2674999999999272,
+      "percentChange": 0.10550036714127162,
+      "allocation": 40.00562154626252
+    },
+    "ETH": {
+      "start": 751.2297,
+      "end": 752.9336999999999,
+      "change": 1.7039999999999509,
+      "percentChange": 0.22682809265926934,
+      "allocation": 25.04527590033471
+    },
+    "SOL": {
+      "start": 450.69948,
+      "end": 450.39148,
+      "change": -0.3079999999999927,
+      "percentChange": -0.06833821951602712,
+      "allocation": 14.981636337648432
+    },
+    "USDC": {
+      "start": 599.8611999999999,
+      "end": 600.28,
+      "change": 0.4188000000000329,
+      "percentChange": 0.06981615080289123,
+      "allocation": 19.96746621575435
+    }
+  },
+  "volatility": {
+    "mean": 0.10263358382101996,
+    "variance": 0,
+    "standardDeviation": 0
+  },
+  "bestPerformer": "ETH",
+  "worstPerformer": "SOL",
+  "weeklyPriceRanges": {
+    "BTC": {
+      "min": 1184830,
+      "max": 1186080,
+      "range": 1250
+    },
+    "ETH": {
+      "min": 35269,
+      "max": 35349,
+      "range": 80
+    },
+    "SOL": {
+      "min": 1462.31,
+      "max": 1463.31,
+      "range": 1
+    },
+    "USDC": {
+      "min": 17.188,
+      "max": 17.2,
+      "range": 0.012000000000000455
+    }
+  },
+  "summaryCount": 2
+}

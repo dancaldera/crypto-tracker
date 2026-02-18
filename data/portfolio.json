@@ -1,0 +1,16 @@
+{
+  "assets": {
+    "BTC": 0.05,
+    "ETH": 0.5,
+    "USDC": 100
+  },
+  "notes": [
+    "Este es un portafolio de ejemplo",
+    "BTC: 0.05 BTC",
+    "ETH: 0.5 ETH",
+    "USDC: 100 USDC",
+    "Ajusta estos valores según tu portafolio real",
+    "O conecta APIs de Bitso/Coinbase para obtener datos reales"
+  ],
+  "last_updated": null
+}

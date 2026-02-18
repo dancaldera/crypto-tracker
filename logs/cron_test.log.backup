@@ -1,0 +1,651 @@
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1152580,
+    book: 'btc_mxn',
+    timestamp: 1770991800231
+  },
+  ETH: {
+    source: 'bitso',
+    price: 33761,
+    book: 'eth_mxn',
+    timestamp: 1770991800406
+  },
+  USDC: {
+    source: 'coinbase',
+    price: 1,
+    asset: 'USDC',
+    timestamp: 1770991800927
+  }
+}
+Fetching portfolio...
+No Bitso API keys configured, using simulated portfolio
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.05, price: 1152580, value: 57629 },
+    ETH: { amount: 0.5, price: 33761, value: 16880.5 },
+    USDC: { amount: 100, price: 1, value: 100 }
+  },
+  notes: [
+    'Este es un portafolio de ejemplo',
+    'BTC: 0.05 BTC',
+    'ETH: 0.5 ETH',
+    'USDC: 100 USDC',
+    'Ajusta estos valores según tu portafolio real',
+    'O conecta APIs de Bitso/Coinbase para obtener datos reales'
+  ],
+  last_updated: null,
+  total_value: 74609.5,
+  timestamp: 1770991801331
+}
+Current allocations: {
+  BTC: 77.24083394205832,
+  ETH: 22.62513486888399,
+  USDC: 0.13403118905769373
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: {
+      current: '77.24',
+      target: 50,
+      diff: '27.24',
+      threshold: 10,
+      action: 'sell'
+    },
+    ETH: { current: '22.63', target: 30, diff: '7.37', threshold: 10 },
+    USDC: {
+      current: '0.13',
+      target: 20,
+      diff: '19.87',
+      threshold: 10,
+      action: 'buy'
+    }
+  },
+  anyNeedsRebalance: true
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $74609.50
+
+*Current Allocation:*
+📈 BTC: 77.24% (target: 50.00%)
+📉 ETH: 22.63% (target: 30.00%)
+📉 USDC: 0.13% (target: 20.00%)
+
+⚠️ *Rebalance Recommended:*
+SELL BTC: 27.24% deviation
+BUY USDC: 19.87% deviation
+
+🕐 2/13/2026, 8:10:01 AM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-13T14:10:01.453Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1178550,
+    book: 'btc_mxn',
+    timestamp: 1770998402551
+  },
+  ETH: {
+    source: 'bitso',
+    price: 34780,
+    book: 'eth_mxn',
+    timestamp: 1770998402722
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.181,
+    book: 'usd_mxn',
+    timestamp: 1770998402866
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1178550, value: 1532.115 },
+    ETH: { amount: 0.0265, price: 34780, value: 921.67 },
+    USDC: { amount: 30.5, price: 17.181, value: 524.0205000000001 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2977.8055,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1770998403339
+}
+Current allocations: {
+  BTC: 51.45114413953497,
+  ETH: 30.951316330096105,
+  USDC: 17.597539530368927
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.45', target: 50, diff: '1.45', threshold: 10 },
+    ETH: { current: '30.95', target: 30, diff: '0.95', threshold: 10 },
+    USDC: { current: '17.60', target: 20, diff: '2.40', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2977.81
+
+*Current Allocation:*
+📈 BTC: 51.45% (target: 50.00%)
+📈 ETH: 30.95% (target: 30.00%)
+📉 USDC: 17.60% (target: 20.00%)
+
+🕐 2/13/2026, 10:00:03 AM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-13T16:00:03.463Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1183870,
+    book: 'btc_mxn',
+    timestamp: 1771005602490
+  },
+  ETH: {
+    source: 'bitso',
+    price: 35219,
+    book: 'eth_mxn',
+    timestamp: 1771005602628
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.15,
+    book: 'usd_mxn',
+    timestamp: 1771005602739
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1183870, value: 1539.031 },
+    ETH: { amount: 0.0265, price: 35219, value: 933.3035 },
+    USDC: { amount: 30.5, price: 17.15, value: 523.0749999999999 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2995.4094999999998,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771005603173
+}
+Current allocations: {
+  BTC: 51.37965276533977,
+  ETH: 31.15779328335575,
+  USDC: 17.46255395130449
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.38', target: 50, diff: '1.38', threshold: 10 },
+    ETH: { current: '31.16', target: 30, diff: '1.16', threshold: 10 },
+    USDC: { current: '17.46', target: 20, diff: '2.54', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2995.41
+
+*Current Allocation:*
+📈 BTC: 51.38% (target: 50.00%)
+📈 ETH: 31.16% (target: 30.00%)
+📉 USDC: 17.46% (target: 20.00%)
+
+🕐 2/13/2026, 12:00:03 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-13T18:00:03.299Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1182510,
+    book: 'btc_mxn',
+    timestamp: 1771012802647
+  },
+  ETH: {
+    source: 'bitso',
+    price: 35353,
+    book: 'eth_mxn',
+    timestamp: 1771012802829
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.172,
+    book: 'usd_mxn',
+    timestamp: 1771012802955
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1182510, value: 1537.263 },
+    ETH: { amount: 0.0265, price: 35353, value: 936.8545 },
+    USDC: { amount: 30.5, price: 17.172, value: 523.746 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2997.8635,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771012803454
+}
+Current allocations: {
+  BTC: 51.27861892310974,
+  ETH: 31.25073906800627,
+  USDC: 17.470642008883992
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.28', target: 50, diff: '1.28', threshold: 10 },
+    ETH: { current: '31.25', target: 30, diff: '1.25', threshold: 10 },
+    USDC: { current: '17.47', target: 20, diff: '2.53', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2997.86
+
+*Current Allocation:*
+📈 BTC: 51.28% (target: 50.00%)
+📈 ETH: 31.25% (target: 30.00%)
+📉 USDC: 17.47% (target: 20.00%)
+
+🕐 2/13/2026, 2:00:03 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-13T20:00:03.575Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Error getting price for BTC: 
+Prices fetched: {
+  ETH: {
+    source: 'bitso',
+    price: 35177,
+    book: 'eth_mxn',
+    timestamp: 1771020003884
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.161,
+    book: 'usd_mxn',
+    timestamp: 1771020004053
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1180270, value: 1534.3509999999999 },
+    ETH: { amount: 0.0265, price: 35177, value: 932.1904999999999 },
+    USDC: { amount: 30.5, price: 17.161, value: 523.4105000000001 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2989.9519999999998,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771020004520
+}
+Current allocations: {
+  BTC: 51.31691077314954,
+  ETH: 31.177440306734024,
+  USDC: 17.50564892011645
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.32', target: 50, diff: '1.32', threshold: 10 },
+    ETH: { current: '31.18', target: 30, diff: '1.18', threshold: 10 },
+    USDC: { current: '17.51', target: 20, diff: '2.49', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2989.95
+
+*Current Allocation:*
+📈 BTC: 51.32% (target: 50.00%)
+📈 ETH: 31.18% (target: 30.00%)
+📉 USDC: 17.51% (target: 20.00%)
+
+🕐 2/13/2026, 4:00:04 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-13T22:00:04.644Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1184390,
+    book: 'btc_mxn',
+    timestamp: 1771027209621
+  },
+  ETH: {
+    source: 'bitso',
+    price: 35192,
+    book: 'eth_mxn',
+    timestamp: 1771027213614
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.186,
+    book: 'usd_mxn',
+    timestamp: 1771027214356
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1184390, value: 1539.7069999999999 },
+    ETH: { amount: 0.0265, price: 35192, value: 932.588 },
+    USDC: { amount: 30.5, price: 17.186, value: 524.173 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2996.468,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771027217009
+}
+Current allocations: {
+  BTC: 51.384062836646336,
+  ETH: 31.122908704514785,
+  USDC: 17.493028458838875
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.38', target: 50, diff: '1.38', threshold: 10 },
+    ETH: { current: '31.12', target: 30, diff: '1.12', threshold: 10 },
+    USDC: { current: '17.49', target: 20, diff: '2.51', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2996.47
+
+*Current Allocation:*
+📈 BTC: 51.38% (target: 50.00%)
+📈 ETH: 31.12% (target: 30.00%)
+📉 USDC: 17.49% (target: 20.00%)
+
+🕐 2/13/2026, 6:00:17 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-14T00:00:17.104Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1184210,
+    book: 'btc_mxn',
+    timestamp: 1771034402141
+  },
+  ETH: {
+    source: 'bitso',
+    price: 35307,
+    book: 'eth_mxn',
+    timestamp: 1771034402282
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.199,
+    book: 'usd_mxn',
+    timestamp: 1771034402485
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.0013, price: 1184210, value: 1539.473 },
+    ETH: { amount: 0.0265, price: 35307, value: 935.6355 },
+    USDC: { amount: 30.5, price: 17.199, value: 524.5695000000001 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.0013 BTC (~$1,500 MXN) - 1.3 milésimas de Bitcoin',
+    'ETH: 0.0265 ETH (~$900 MXN) - 2.65 centésimas de Ethereum',
+    'USDC: 30.5 USDC (~$600 MXN) - Stablecoin para rebalanceos',
+    'Perfiles de riesgo: bajo, ideal para aprender'
+  ],
+  total_value: 2999.678,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771034402946
+}
+Current allocations: {
+  BTC: 51.321275150199455,
+  ETH: 31.191197855236464,
+  USDC: 17.48752699456409
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '51.32', target: 50, diff: '1.32', threshold: 10 },
+    ETH: { current: '31.19', target: 30, diff: '1.19', threshold: 10 },
+    USDC: { current: '17.49', target: 20, diff: '2.51', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $2999.68
+
+*Current Allocation:*
+📈 BTC: 51.32% (target: 50.00%)
+📈 ETH: 31.19% (target: 30.00%)
+📉 USDC: 17.49% (target: 20.00%)
+
+🕐 2/13/2026, 8:00:02 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-14T02:00:03.071Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed
+🪙 Starting Crypto Monitor...
+Trading enabled: NO
+Fetching prices...
+Prices fetched: {
+  BTC: {
+    source: 'bitso',
+    price: 1186080,
+    book: 'btc_mxn',
+    timestamp: 1771041602247
+  },
+  ETH: {
+    source: 'bitso',
+    price: 35349,
+    book: 'eth_mxn',
+    timestamp: 1771041602574
+  },
+  SOL: {
+    source: 'bitso',
+    price: 1462.31,
+    book: 'sol_mxn',
+    timestamp: 1771041602700
+  },
+  USDC: {
+    source: 'bitso',
+    price: 17.2,
+    book: 'usd_mxn',
+    timestamp: 1771041602929
+  }
+}
+Fetching portfolio...
+⚠️  No Bitso API keys configured, using simulated portfolio
+📁 Loading portfolio: test (/home/dc/.openclaw/workspace/crypto-tracker/data/portfolio_test.json)
+✅ Portfolio loaded: test_conservador
+Portfolio: {
+  assets: {
+    BTC: { amount: 0.001014, price: 1186080, value: 1202.6851199999999 },
+    ETH: { amount: 0.0213, price: 35349, value: 752.9336999999999 },
+    SOL: { amount: 0.308, price: 1462.31, value: 450.39148 },
+    USDC: { amount: 34.9, price: 17.2, value: 600.28 }
+  },
+  notes: [
+    'Cartera de TEST - MODO CONSERVADOR',
+    'Monto total: ~$3,000 MXN ($150 USD)',
+    'BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor',
+    'ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi',
+    'SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi',
+    'USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez',
+    'Perfiles de riesgo: bajo, ideal para aprender',
+    'Configuración con 4 assets optimizada'
+  ],
+  total_value: 3006.2902999999997,
+  last_updated: null,
+  mode: 'test_conservador',
+  risk_profile: 'conservador',
+  timestamp: 1771041603667
+}
+Current allocations: {
+  BTC: 40.00562154626252,
+  ETH: 25.04527590033471,
+  SOL: 14.981636337648432,
+  USDC: 19.96746621575435
+}
+Rebalance info: {
+  needsRebalance: {
+    BTC: { current: '40.01', target: 40, diff: '0.01', threshold: 10 },
+    ETH: { current: '25.05', target: 25, diff: '0.05', threshold: 10 },
+    SOL: { current: '14.98', target: 15, diff: '0.02', threshold: 10 },
+    USDC: { current: '19.97', target: 20, diff: '0.03', threshold: 10 }
+  },
+  anyNeedsRebalance: false
+}
+
+📢 Alert: 📊 *Crypto Portfolio Update*
+
+💰 Total Value: $3006.29
+
+*Current Allocation:*
+📈 BTC: 40.01% (target: 40.00%)
+📈 ETH: 25.05% (target: 25.00%)
+📉 SOL: 14.98% (target: 15.00%)
+📉 USDC: 19.97% (target: 20.00%)
+
+🕐 2/13/2026, 10:00:03 PM
+
+💵 PnL Report: {
+  "generated_at": "2026-02-14T04:00:03.792Z",
+  "total_realized_pnl": 0,
+  "by_asset": {}
+}
+
+✅ Monitor run completed

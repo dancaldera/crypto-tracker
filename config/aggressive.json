@@ -1,0 +1,37 @@
+{
+  "mode": "aggressive",
+  "description": "Modo agresivo de trading - Mayor riesgo, mayor potencial de ganancias",
+  "riskParams": {
+    "maxPositionSizePercent": 40,
+    "minTradePercent": 0.5,
+    "maxDailyTrades": 10,
+    "maxDailyLossPercent": 2,
+    "takeProfitPercent": 4,
+    "stopLossPercent": 1.5,
+    "allocationWeight": 0.3,
+    "technicalWeight": 0.7
+  },
+  "indicators": {
+    "sma": { "short": 6, "medium": 12, "long": 36 },
+    "ema": { "fast": 6, "slow": 12 },
+    "rsi": { "period": 14 },
+    "macd": { "fastPeriod": 12, "slowPeriod": 26, "signalPeriod": 9 },
+    "bollingerBands": { "period": 20, "stdDev": 2 },
+    "lookbackDays": 3
+  },
+  "thresholds": {
+    "rsi": {
+      "oversold": 25,
+      "overbought": 75
+    },
+    "signalScore": {
+      "strongBuy": 70,
+      "buy": 60,
+      "sell": 40,
+      "strongSell": 30
+    },
+    "crossover": {
+      "strengthThreshold": 0.005
+    }
+  }
+}

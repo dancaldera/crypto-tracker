@@ -1,0 +1,17 @@
+📊 *Daily Crypto Summary - 2026-02-15*
+
+💰 *Portfolio Value*
+   Start: $2970.65 MXN
+   End: $2954.73 MXN
+   📉 Change: $-15.93 (-0.54%)
+
+📈 *Asset Performance*
+   🔴 BTC: $-6.58 (-0.55%) - $1190.55 MXN
+   🔴 ETH: $-3.92 (-0.55%) - $715.08 MXN
+   🔴 SOL: $-5.05 (-1.11%) - $450.18 MXN
+   🔴 USDC: $-0.38 (-0.06%) - $598.92 MXN
+
+🔄 *System Stats*
+   Runs: 12 (expected: 12)
+   Rebalance signals: 0
+   Errors: 0

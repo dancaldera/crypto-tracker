@@ -1,0 +1,122 @@
+{
+  "date": "2026-02-13",
+  "runCount": 6,
+  "errors": {
+    "count": 0,
+    "last": null
+  },
+  "rebalanceSignals": 0,
+  "portfolio": {
+    "startValue": 3003.208,
+    "endValue": 3006.2902999999997,
+    "dailyChange": 3.0822999999995773,
+    "dailyPercentChange": 0.10263358382101996,
+    "currentValue": 3006.2902999999997
+  },
+  "assetPerformance": {
+    "BTC": {
+      "start": 1201.41762,
+      "end": 1202.6851199999999,
+      "change": 1.2674999999999272,
+      "percentChange": 0.10550036714127162,
+      "amount": 0.001014,
+      "allocation": 40.00562154626252
+    },
+    "ETH": {
+      "start": 751.2297,
+      "end": 752.9336999999999,
+      "change": 1.7039999999999509,
+      "percentChange": 0.22682809265926934,
+      "amount": 0.0213,
+      "allocation": 25.04527590033471
+    },
+    "SOL": {
+      "start": 450.69948,
+      "end": 450.39148,
+      "change": -0.3079999999999927,
+      "percentChange": -0.06833821951602712,
+      "amount": 0.308,
+      "allocation": 14.981636337648432
+    },
+    "USDC": {
+      "start": 599.8611999999999,
+      "end": 600.28,
+      "change": 0.4188000000000329,
+      "percentChange": 0.06981615080289123,
+      "amount": 34.9,
+      "allocation": 19.96746621575435
+    }
+  },
+  "priceRanges": {
+    "BTC": {
+      "min": 1184830,
+      "max": 1186080,
+      "first": 1184830,
+      "last": 1186080,
+      "count": 4
+    },
+    "ETH": {
+      "min": 35269,
+      "max": 35349,
+      "first": 35269,
+      "last": 35349,
+      "count": 4
+    },
+    "SOL": {
+      "min": 1462.31,
+      "max": 1463.31,
+      "first": 1463.31,
+      "last": 1462.31,
+      "count": 4
+    },
+    "USDC": {
+      "min": 17.188,
+      "max": 17.2,
+      "first": 17.188,
+      "last": 17.2,
+      "count": 4
+    }
+  },
+  "allocations": {
+    "current": {
+      "BTC": {
+        "start": 1201.41762,
+        "end": 1202.6851199999999,
+        "change": 1.2674999999999272,
+        "percentChange": 0.10550036714127162,
+        "amount": 0.001014,
+        "allocation": 40.00562154626252
+      },
+      "ETH": {
+        "start": 751.2297,
+        "end": 752.9336999999999,
+        "change": 1.7039999999999509,
+        "percentChange": 0.22682809265926934,
+        "amount": 0.0213,
+        "allocation": 25.04527590033471
+      },
+      "SOL": {
+        "start": 450.69948,
+        "end": 450.39148,
+        "change": -0.3079999999999927,
+        "percentChange": -0.06833821951602712,
+        "amount": 0.308,
+        "allocation": 14.981636337648432
+      },
+      "USDC": {
+        "start": 599.8611999999999,
+        "end": 600.28,
+        "change": 0.4188000000000329,
+        "percentChange": 0.06981615080289123,
+        "amount": 34.9,
+        "allocation": 19.96746621575435
+      }
+    },
+    "target": {
+      "BTC": 0.4,
+      "ETH": 0.25,
+      "SOL": 0.15,
+      "USDC": 0.2
+    }
+  }
+}

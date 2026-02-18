@@ -1,0 +1,37 @@
+{
+  "mode": "conservative",
+  "description": "Modo conservador de trading - Menor riesgo, proteccion de capital",
+  "riskParams": {
+    "maxPositionSizePercent": 30,
+    "minTradePercent": 1,
+    "maxDailyTrades": 5,
+    "maxDailyLossPercent": 2,
+    "takeProfitPercent": 5,
+    "stopLossPercent": 3,
+    "allocationWeight": 0.4,
+    "technicalWeight": 0.6
+  },
+  "indicators": {
+    "sma": { "short": 6, "medium": 12, "long": 36 },
+    "ema": { "fast": 6, "slow": 12 },
+    "rsi": { "period": 14 },
+    "macd": { "fastPeriod": 12, "slowPeriod": 26, "signalPeriod": 9 },
+    "bollingerBands": { "period": 20, "stdDev": 2 },
+    "lookbackDays": 3
+  },
+  "thresholds": {
+    "rsi": {
+      "oversold": 30,
+      "overbought": 70
+    },
+    "signalScore": {
+      "strongBuy": 70,
+      "buy": 60,
+      "sell": 40,
+      "strongSell": 30
+    },
+    "crossover": {
+      "strengthThreshold": 0.01
+    }
+  }
+}
