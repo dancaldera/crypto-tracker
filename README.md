@@ -21,7 +21,54 @@ node test_integration.js
 
 ---
 
+## ⚠️ Modo Paper Trading (DEFAULT)
+
+**IMPORTANTE:** El sistema está configurado en **modo paper trading por defecto**.
+
+- ✅ Analiza mercados y genera decisiones de trading
+- ✅ Simula ejecución de trades (sin dinero real)
+- ❌ NO ejecuta trades reales en Bitso
+- ❌ NO requiere API keys de Bitso para funcionar
+
+**¿Cuándo usar?**
+- Aprendizaje y experimentación
+- Testing de estrategias
+- Backtesting
+- Validación antes de usar dinero real
+
+---
+
+## 💸 Habilitar Trading Real
+
+**⚠️ ADVERTENCIA:** Solo activa esto si entiendes los riesgos. ¡Puedes perder dinero!
+
+```bash
+# Habilitar trading real con modo conservador
+ENABLE_TRADING=true node monitor.js
+
+# Habilitar trading real con modo agresivo
+ENABLE_TRADING=true TRADING_MODE=aggressive node monitor.js
+```
+
+**Requisitos para trading real:**
+- API keys de Bitso configuradas en `.env`
+- `BITSO_API_KEY`
+- `BITSO_API_SECRET`
+- Cuenta verificada en Bitso
+- Fondos suficientes en el exchange
+
+---
+
 ## 🚀 Comandos Rápidos
+
+### Ejecutar el Monitor (PAPER TRADING - DEFAULT)
+```bash
+cd /home/dc/.openclaw/workspace/crypto-tracker && node monitor.js
+```
+
+Modos disponibles:
+- **Conservador** (default): `node monitor.js` o `TRADING_MODE=conservative node monitor.js`
+- **Agresivo**: `TRADING_MODE=aggressive node monitor.js`
 
 ### Ver resumen completo del día
 ```bash
