@@ -1,16 +1,21 @@
 {
   "assets": {
-    "BTC": 0.05,
-    "ETH": 0.5,
-    "USDC": 100
+    "BTC": 0.001014,
+    "ETH": 0.0213,
+    "SOL": 0.308,
+    "USDC": 34.9
   },
   "notes": [
-    "Este es un portafolio de ejemplo",
-    "BTC: 0.05 BTC",
-    "ETH: 0.5 ETH",
-    "USDC: 100 USDC",
-    "Ajusta estos valores según tu portafolio real",
-    "O conecta APIs de Bitso/Coinbase para obtener datos reales"
+    "Cartera de TEST - MODO CONSERVADOR",
+    "Monto total: ~$3,000 MXN ($150 USD)",
+    "BTC: 0.001014 BTC (~$1,200 MXN, 40%) - Reserva de valor",
+    "ETH: 0.0213 ETH (~$750 MXN, 25%) - Smart contracts, DeFi",
+    "SOL: 0.308 SOL (~$450 MXN, 15%) - High performance, ecosistema NFT/DeFi",
+    "USDC: 34.9 USDC (~$600 MXN, 20%) - Stablecoin para rebalanceos y liquidez",
+    "Perfiles de riesgo: bajo, ideal para aprender",
+    "Configuración con 4 assets optimizada"
   ],
+  "mode": "test_conservador",
+  "risk_profile": "conservador",
   "last_updated": null
 }
